@@ -1,0 +1,13 @@
+{
+  "name": "stylelint-formatter-stats",
+  "version": "0.0.1",
+  "description": "A custom formatter which shows aggregated statistics of stylelint errors",
+  "main": "index.js",
+  "scripts": {
+    "lint:stats": "stylelint . --custom-formatter=node_modules/stylelint-formatter-stats"
+  },
+  "keywords": ["stylelint", "formatter", "stats", "statistic"],
+  "author": "Thomas Dürr <thomduerr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {}
+}
