@@ -6,8 +6,15 @@
   "scripts": {
     "lint:stats": "stylelint . --custom-formatter=node_modules/stylelint-formatter-stats"
   },
-  "keywords": ["stylelint", "formatter", "stats", "statistic"],
+  "keywords": [
+    "stylelint",
+    "formatter",
+    "stats",
+    "statistic"
+  ],
   "author": "Thomas Dürr <thomduerr@gmail.com>",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
 }
