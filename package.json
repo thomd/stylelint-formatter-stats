@@ -1,6 +1,6 @@
 {
   "name": "stylelint-formatter-stats",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A custom formatter which shows aggregated statistics of stylelint errors",
   "main": "index.js",
   "scripts": {
