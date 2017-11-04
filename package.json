@@ -1,7 +1,7 @@
 {
   "name": "stylelint-formatter-stats",
   "version": "0.1.0",
-  "description": "A custom formatter which shows aggregated statistics of stylelint errors",
+  "description": "A custom formatter which shows aggregated statistics of Stylelint errors.",
   "main": "index.js",
   "scripts": {
     "lint": "xo --no-semicolon --space",
@@ -13,7 +13,18 @@
     "stats",
     "statistic"
   ],
-  "author": "Thomas Dürr <thomduerr@gmail.com>",
+  "author": {
+    "email": "thomduerr@gmail.com",
+    "name": "Thomas Duerr",
+    "url": "http://git.io/thomd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thomd/stylelint-formatter-stats.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thomd/stylelint-formatter-stats/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.3.0",
