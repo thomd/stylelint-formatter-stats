@@ -1,11 +1,20 @@
-# Statistics Formatter for Stylelint
+# Statistic Formatter for Stylelint
 
-Analyse styles for error frequency, rather than location. This is particularly useful when introducing Stylelint to a legacy project.
+A statistic formatter for [Stylelint](https://stylelint.io/): analyse styles for error frequency, rather than location. This is particularly useful when introducing Stylelint to a legacy project.
+
+![](screenshot.png)
 
 ## Install
 
-    npm install stylelint stylelint-formatter-stats
+    npm install -g stylelint
+    npm install stylelint-formatter-stats
 
 ## Usage
 
-    npx stylelint "src/**/*.scss" --custom-formatter=node_modules/stylelint-formatter-stats
+### Stylelint CLI
+
+    stylelint "src/**/*.scss" --custom-formatter=node_modules/stylelint-formatter-stats
+
+## Related
+
+* [eslint-stats](https://github.com/ganimomer/eslint-stats) – a statistic reporter for ESLint
