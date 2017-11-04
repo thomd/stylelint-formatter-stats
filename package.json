@@ -4,7 +4,8 @@
   "description": "A custom formatter which shows aggregated statistics of stylelint errors",
   "main": "index.js",
   "scripts": {
-    "lint:stats": "stylelint . --custom-formatter=node_modules/stylelint-formatter-stats"
+    "lint": "xo --no-semicolon --space",
+    "precommit": "npm run -s lint"
   },
   "keywords": [
     "stylelint",
@@ -18,5 +19,9 @@
     "chalk": "^2.3.0",
     "lodash": "^4.17.4",
     "printf": "^0.2.5"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "xo": "^0.18.2"
   }
 }
