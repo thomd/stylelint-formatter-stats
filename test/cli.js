@@ -4,7 +4,7 @@ import stripAnsi from 'strip-ansi'
 import aggregate from '../lib/aggregate'
 import normalize from '../lib/normalize'
 import chart from '../lib/chart'
-import config from './config'
+import config from './fixtures/config'
 
 let data = {}
 
@@ -33,5 +33,5 @@ test('normalize', t => {
 test('chart', t => {
   const aggregatedStats = aggregate(data.results)
   const generatedChart = stripAnsi(chart(aggregatedStats, {symbol: '#'}))
-  t.is(generatedChart, '\n declaration-colon-space-after: 4 |####\n length-zero-no-unit:           1 |#\n')
+  t.is(generatedChart, '\n declaration-colon-space-after: 4 |####\n length-zero-no-unit:           1 |#\n\n 5 errors\n')
 })

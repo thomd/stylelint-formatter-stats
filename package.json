@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "xo --no-semicolon --space",
     "precommit": "npm run -s lint",
-    "test": "ava test -v"
+    "test": "ava test -v",
+    "test:visual": "stylelint --config test/fixtures/config.json test/fixtures/*.scss --custom-formatter ."
   },
   "keywords": [
     "stylelint",
@@ -30,6 +31,7 @@
   "dependencies": {
     "chalk": "^2.3.0",
     "lodash": "^4.17.4",
+    "plur": "^2.1.2",
     "printf": "^0.2.5"
   },
   "devDependencies": {
