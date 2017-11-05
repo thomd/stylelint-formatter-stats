@@ -1,8 +1,9 @@
-const flatMap = require('lodash/flatMap')
-const groupBy = require('lodash/groupBy')
-const mapValues = require('lodash/mapValues')
-const bar = require('./lib/bar')
+const aggregate = require('./lib/aggregate')
+const chart = require('./lib/chart')
 
-const formatter = results => bar(mapValues(groupBy(flatMap(results, 'warnings'), 'rule'), count => count.length))
+const formatter = results => {
+  const stats = aggregate(results)
+  return chart(stats)
+}
 
 module.exports = formatter

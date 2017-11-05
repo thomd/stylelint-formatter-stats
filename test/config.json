@@ -1,0 +1,6 @@
+{
+  "rules": {
+    "declaration-colon-space-after": "always",
+    "length-zero-no-unit": true
+  }
+}
