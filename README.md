@@ -10,7 +10,7 @@ Aggregate a distribution of [Stylelint](https://stylelint.io/) errors and warnin
 ## Install
 
 ```shell
-npm install --production stylelint-formatter-stats
+npm install stylelint-formatter-stats
 ```
 
 ## Usage
