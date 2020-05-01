@@ -7,7 +7,9 @@
     "lint": "xo --no-semicolon --space",
     "precommit": "npm run -s lint",
     "test": "ava test -v",
-    "test:visual": "stylelint --config test/fixtures/config.json test/fixtures/*.scss --custom-formatter ."
+    "test:visual": "stylelint --config test/fixtures/config.json test/fixtures/*.scss --custom-formatter .",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "stylelint",
@@ -32,7 +34,8 @@
     "chalk": "^2.3.0",
     "lodash": "^4.17.4",
     "plur": "^2.1.2",
-    "printf": "^0.2.5"
+    "printf": "^0.2.5",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "ava": "^0.23.0",
@@ -40,5 +43,6 @@
     "strip-ansi": "^4.0.0",
     "stylelint": "^8.2.0",
     "xo": "^0.18.2"
-  }
+  },
+  "snyk": true
 }
